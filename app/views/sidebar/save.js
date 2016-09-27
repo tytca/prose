@@ -49,7 +49,7 @@ module.exports = Backbone.View.extend({
   render: function() {
     var writable = this.file.get('writable') ?
       t('sidebar.save.save') :
-      t('sidebar.save.submit')
+      t('sidebar.save.submit');
 
     this.$el.html(_.template(this.template, writable, {
       variable: 'writable'
