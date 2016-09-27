@@ -103,8 +103,9 @@ module.exports = Backbone.View.extend({
       var date = util.extractDate(name);
       var extension = name.split('.').pop();
 
-      path = parts.join('/') + '/' + date + '-' +
-        util.stringToUrl(value) + '.' + extension;
+      path = parts.join('/') + '/' + date + '-' + value + '.' + extension;
+      // util.stringToUrl(value) cause non-alphanumeric words disappeared
+
 
       this.file.set('path', path);
     }
