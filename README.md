@@ -21,3 +21,8 @@ New to Internet Relay Chat? [Join quickly & easily using your Web browser](http:
 ### Help contribute
 
 Prose project is currently looking for [new maintainers](https://github.com/prose/prose/issues/743).
+
+## 更新後台
+
+更改完專案內容後，要將`/site`資料夾底下的東西放到`gh-pages`，這樣`https://tytca.github.io/prose`的內容才會更新。    
+可以於專案根目錄執行`sh ./.build_scripts/deploy.sh`(只能於MAC上執行)。
